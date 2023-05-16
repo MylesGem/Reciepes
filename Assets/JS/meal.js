@@ -17,7 +17,7 @@ const mealSearch = (searchTerm) => {
         recipeEl.css('display', 'none');
         nutritionEl.css('display', 'none');
         $("#footer").css('position', "");
-  
+
         if (mealsArray === null) {
             const searchFailedMsg = $('<p>').text('Sorry, no results were found. Try another search.');
             $('#search-results').append(searchFailedMsg);
@@ -26,10 +26,10 @@ const mealSearch = (searchTerm) => {
             const historyElement = document.querySelector('[data-search="' + searchTerm + '"]');
 
             const recipesReturnedCount = `${searchTerm} (${mealsArray.length})`;
-          
+        
             let searchHistory = JSON.parse(localStorage.getItem('search_history'));
             searchHistory[searchTerm].text = recipesReturnedCount;
-          
+        
             localStorage.setItem('search_history', JSON.stringify(searchHistory));
 
             historyElement.innerHTML = recipesReturnedCount;
@@ -40,12 +40,12 @@ const mealSearch = (searchTerm) => {
                 const resultImg = $('<img>').attr('width', '200');
                 resultImg.attr('src', obj.strMealThumb);
                 const resultPara = $('<p>').text(obj.strMeal);
-              
+            
                 resultLink.attr("onclick", "recipeSelected(event)");
                 resultLink.append(resultImg);
                 resultLink.append(resultPara);
                 resultElement.append(resultLink);
-              
+            
                 $('#search-results').append(resultElement);
             };
         }
