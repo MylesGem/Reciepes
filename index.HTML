@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.css">
+    <link rel="stylesheet" href="Assets/CSS/Style.css">
+    <title>Easy Recipies</title>
+    </head>
+    <body>
+        <section class="hero is-dark">
+            <div class="hero-body">
+              <div class="container" id="heroContainer">
+                <img id="logo" class="" src="Assets/IMages/Logo.jpg" alt="MIC" style="max-width: 1000px; max-height: 1000px;">
+                <div class="titleHero">
+                  <h1 id="titleLogo">Easy Recipies</h1>
+                  <h4 class="subtitle is-4" id="subHead">Healthier Eating</h4>
+                </div>
+              </div>
+            </div>
+        </section>
+    <div class="section main">
+        <div class="container">
+        <div class="columns">
+            <div class="column is-4" >
+                <form  id="search-form" style="color: brown; margin: 50px; border: inset;">
+                    <label class="label">Recipe Search</label>
+                    <div class="field has-addons">
+                      <div class="control">
+                        <input class="input" type="text" placeholder="Enter Search" id="search-field">
+                      </div>
+                      <div class="control">
+                        <a class="button is-info is-responsive" id="search-button">Search</a>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="notification has-background-grey-lighter" id="search-history">
+                    <div class="search-clear">
+                      <label class="label" id="history-label">Inspirational Ideas</label>
+                      <button class="Control">
+                        <a class="button is-info is-responsive" id="clear-localStorage">Clear History</a>
+                      </button>
+                    </div>
+                    <p class="is-size-4" id='search-history-help'>Ideas to inspire you.</p>
+                    <ul class="is-size-5" id="search-history-list">
+                    </ul>
+                  </div>
+                </div>
+                <div class="column is-8">
+                    <div class="notification is-warning is-size-7" id="search-results-container" style="display: none;">
+                      <div class="columns is-multiline" id="search-results" style="background-color: rgb(255, 5, 5);"></div>
+                    </div>
+          
+                    <div class="notification is-default is-size-4 is-size-5-mobile" id="recipe" style="display: none;">
+                      <button class="button is-primary is-responsive" id="back-button">Back</button>
+                      <div class="columns">
+                        <div class="column is-3">
+                          <img id="recipe_img" />
+                        </div>
+                        <div class="column is-9">
+                          <h3 id="title" class="title"></h3>
+          
+                          <div class="columns">
+                            <div class="column is-9">
+                              <ul id="recipe-list"></ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+          
+                      <div class="columns">
+                        <p id="instructions"></p>
+                      </div>
+                      <br>
+                      <br>
+                      <div class="columns is-centered" id="video">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- separate container for nutrition facts-->
+              <div class="table-container">
+                <div class="columns is-centered" id="nutrition-table" style="display: none;">
+                  <div class="column">
+                    <table class="table is-stiped is-fullwidth">
+                    <thead class="is-size-4-mobile">
+                      <tr>
+                        <th><abbr title="Quantity">Qty</abbr></th>
+                        <th>Unit</th>
+                        <th>Food</th>
+                        <th>Calories</th>
+                        <th>Weight</th>
+                        <th>Food Group</th>
+                      </tr>
+                    </thead>
+                    <tfoot class="is-size-4-mobile" id="nutrition_foot">
+                      <tr>
+                        <th></th>
+                        <th></th>
+                        <th>Total</th>
+                        <th id="total_cal">1290</th>
+                        <th id="total_weight">560.08 g</th>
+                        <th></th>
+                      </tr>
+                    </tfoot>
+                    <tbody class="is-size-5 is-size-4-desktop" id="nutrition_body">
+                    </tbody>
+                    </table>
+                </div>
+              </div>
+            </div>
+            </div>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="Assets/JS/meal.js"></script>
+  <script src="Assets/JS/nutritionix.js"></script>
+  <script src="Assets/JS/search_history.js"></script>
+  <script src="Assets/JS/main.js"></script>
+</html>
