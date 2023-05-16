@@ -12,13 +12,13 @@
     <body>
         <section class="hero is-dark">
             <div class="hero-body">
-              <div class="container" id="heroContainer">
-                <img id="logo" class="" src="Assets/IMages/Logo.jpg" alt="MIC" style="max-width: 1000px; max-height: 1000px;">
-                <div class="titleHero">
-                  <h1 id="titleLogo">Easy Recipies</h1>
-                  <h4 class="subtitle is-4" id="subHead">Healthy Eating</h4>
+                <div class="container" id="heroContainer">
+                    <img id="logo" class="" src="Assets/IMages/Logo.jpg" alt="MIC" style="max-width: 1000px; max-height: 1000px;">
+                    <div class="titleHero">
+                        <h1 id="titleLogo">Easy Recipies</h1>
+                        <h4 class="subtitle is-4" id="subHead">Healthy Eating</h4>
+                    </div>
                 </div>
-              </div>
             </div>
         </section>
     <div class="section main">
@@ -28,22 +28,22 @@
                 <form  id="search-form" style="color: rgb(184, 160, 56); margin: 50px; border: inset;">
                     <label class="label">Recipe Search</label>
                     <div class="field has-addons">
-                      <div class="control">
-                        <input class="input" type="text" placeholder="Enter Search" id="search-field">
-                      </div>
-                      <div class="control">
-                        <a class="button is-info is-responsive" id="search-button">Search</a>
-                      </div>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Enter Search" id="search-field">
+                        </div>
+                        <div class="control">
+                            <a class="button is-info is-responsive" id="search-button">Search</a>
+                        </div>
                     </div>
-                  </form>
-                  <div class="notification has-background-grey-lighter" id="search-history">
-                    <div class="search-clear">
-                      <label class="label" id="history-label">Ideas</label>
-                      <button class="Control">
-                        <a class="button is-info is-responsive" id="clear-localStorage">Clear History</a>
-                      </button>
-                    </div>
-                    <p class="is-size-4" id='search-history-help'>Recipes to Help Eat Healthier</p>
+                </form>
+                    <div class="notification has-background-grey-lighter" id="search-history">
+                        <div class="search-clear">
+                            <label class="label" id="history-label">Ideas</label>
+                            <button class="Control">
+                            <a class="button is-info is-responsive" id="clear-localStorage">Clear History</a>
+                            </button>
+                        </div>
+                    <p class="is-size-4" id='search-history-help'>Recipes to Help Eat Healthy</p>
                     <ul class="is-size-5" id="search-history-list">
                     </ul>
                   </div>
@@ -113,6 +113,13 @@
             </div>
             </div>
     </body>
+    <footer class="container is-fluid" id="footer" style="position:fixed">
+        <div>
+          <h5 class="footer-brand title is-5"> The Inspired Recipe </h5>
+        </div>
+    </footer>
+      
+      <div class="columns is-multiline has-text-centered is-mobile is-size-7-mobile is-size-5-tablet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="Assets/JS/meal.js"></script>
   <script src="Assets/JS/nutritionix.js"></script>
