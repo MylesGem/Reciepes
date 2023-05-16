@@ -1,0 +1,124 @@
+.hidden {
+    display: none;
+  }
+  
+  #measurement,
+  #ingredient {
+    list-style-type: none;
+  }
+  
+  .titleHero {
+    flex-direction: row;
+    margin-left: 5px;
+  }
+  
+  .notification.is-warning {
+    background-color: #000000;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  
+  #logo {
+    border: rgb(255, 238, 0) 2px ridge;
+  }
+  
+  #titleLogo {
+    color: rgb(255, 230, 0);
+    font-size: 35px;
+    font-weight: bolder;
+  }
+  
+  .hero.is-dark {
+    background-color: #000000;
+    color: #000000;
+  }
+  .hero {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  article, aside, figure, footer, header, hgroup, section {
+    display: block;
+  
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  section {
+    display: block;
+  }
+  
+  body {
+    color: #535353;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1.5;
+    
+  }
+  
+  #heroContainer {
+    display: flex;
+  }
+  .hero-body {
+    padding-bottom: 0px;
+    padding-top: 10px;
+  }
+  
+  #footer {
+    background-image: linear-gradient(to bottom, #f3dc09, rgb(17, 13, 13));
+    align-items: center;
+    justify-content: space-between;
+    border-top: grey 10px groove;
+    color: rgba(7, 12, 10, 0);
+    bottom: 0;
+    width: 100%;
+    color: #1f1c10;
+   
+  }
+  
+  .notification {
+      border-radius: 4px;
+      padding: 3rem 1rem 1rem;
+      position: relative;
+  }
+  
+  button {
+    padding: 0px;
+    border: 0px;
+  }
+  
+  
+  #back-button {
+    float: right;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-brand {
+    color: white;
+    text-shadow: 2px 2px black;
+    text-align: center;
+  }
+  
+  
+  .id {
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .box:not(:last-child), .content:not(:last-child), .notification:not(:last-child), .progress:not(:last-child), .table:not(:last-child), .table-container:not(:last-child), .title:not(:last-child), .subtitle:not(:last-child), .block:not(:last-child), .highlight:not(:last-child), .breadcrumb:not(:last-child), .level:not(:last-child), .list:not(:last-child), .message:not(:last-child), .pagination:not(:last-child), .tabs:not(:last-child) {
+    margin-bottom: 7.5rem;
+  }
+  
+  label {
+    font-size: 30px !important; 
+  }
+  
+  #search-results p {
+    font-size: 20px;
+  }
